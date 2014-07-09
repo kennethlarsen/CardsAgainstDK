@@ -22,14 +22,14 @@ angular.module('myApp.services', [])
             currentGameId: undefined,
             initName: function() {
                 if(this.playerName.length === 0) {
-                    this.playerName = 'anonymous ' + s4();
+                    this.playerName = 'Anonym ' + s4();
                 }
             },
             getGames: function() {
                 return $http.get('/list');
             },
             createGame: function() {
-                return $http.post('/add', { id: guid(), name: this.playerName + "'s game" });
+                return $http.post('/add', { id: guid(), name: this.playerName });
             },
             joinGame: function(gameId, playerId, name) {
                 return $http.post("/joingame", { gameId: gameId, playerId: playerId, playerName: name });

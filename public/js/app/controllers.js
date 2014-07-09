@@ -106,33 +106,33 @@ angular.module('myApp.controllers', [])
         $scope.getPlayerStatus = function(player) {
             var status ='';
             if(!$scope.game.isStarted) {
-                status = "waiting";
+                status = "Venter";
             }
             else if(!$scope.game.isReadyForReview && !$scope.game.isReadyForScoring) {
                 if(player.isCzar) {
-                    status = "card czar";
+                    status = "Konge";
                 } else if(!player.selectedWhiteCardId) {
-                    status = "selecting card";
+                    status = "Vælger kort";
                 } else if(player.selectedWhiteCardId) {
-                    status = "card selected";
+                    status = "Kort valgt";
                 }
             }
             else if($scope.game.isReadyForReview) {
                 if(player.isReady) {
-                    status = "ready for next round";
+                    status = "Klar til næste runde";
                 } else {
-                    status = "reviewing results";
+                    status = "Er ikke klar";
                 }
             }
             else if($scope.game.isReadyForScoring) {
                 if(player.isCzar) {
-                    status = "selecting winner";
+                    status = "Vælger vinder";
                 } else {
-                    status = "card selected"
+                    status = "Kort valgt"
                 }
             }
             if($scope.game.isOver) {
-                status = player.awesomePoints == $scope.game.pointsToWin ? "WINNER!" : "loser :(";
+                status = player.awesomePoints == $scope.game.pointsToWin ? "Vinder!" : "taber :(";
             }
 
             return status;
@@ -152,9 +152,9 @@ angular.module('myApp.controllers', [])
 
         $scope.getButtonText = function(card) {
             if(card === $scope.currentPlayer.selectedWhiteCardId) {
-                return 'selected'
+                return 'Valgt'
             } else {
-                return 'select'
+                return 'Vælg'
             }
         };
 

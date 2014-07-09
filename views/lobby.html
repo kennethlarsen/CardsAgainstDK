@@ -1,16 +1,55 @@
-<h4>Instructions</h4>
+
+
+<div class="jumbotron">
+        <h1 class="niggur">Det forkerte selskab <i class="fa fa-gavel"></i></h1>
+        <p>Spillet som handler om at gøre en sætning så upassende/sjov/mærksværdig så muligt.</p>
+        <p><a ng-click="createGame()" href="" class="btn btn-primary btn-lg" role="button">Start et nyt rum &raquo;</a></p>
+      </div>
+
+
+<div class="col-md-6">
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Instruktioner</h3>
+  </div>
+
+ <div class="panel-body">
 <ul>
-  <li>Enter your name at the top.</li>
-  <li>You need 4 players to play.</li>
-  <li>Use the Create Game link at the top to start a game or...</li>
-  <li>click below to join a game.</li>
+  <li>Skriv dit navn i toppen</li>
+  <li>I skal være 4 mennesker for at spille</li>
+  <li>Brug "lav rum"-linket til at lave et rum og</li>
+  <li>Få dine venner til at klikke herunder for at komme ind i dit rum</li>
 </ul>
+  </div>
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Hvis du får stiv pik af det her spil</h3>
+  </div>
+
+ <div class="panel-body">
+Så gå væk. Tak.
+  </div>
+</div>
+
+
+
+</div>
+
+
 <hr />
 <div class="row" id="availableGames" >
-  <div class="col-lg-10">
-    <strong id="noGames" ng-show="availableGames.length == 0">no open games... use the Create Game link at the top to start one.</strong>
-    <div ng-repeat="game in availableGames" class="well">
-      <button ng-click="joinGame(game.id)" type="button" class="btn btn-primary" style="margin-right: 10px;">Join Game</button>
+  <div class="col-lg-12">
+    <strong id="noGames" ng-show="availableGames.length == 0">Ingen åbne rum. Klik på "Nyt rum" for at lave et.</strong>
+    <div ng-repeat="game in availableGames">
+      <button ng-click="joinGame(game.id)" type="button" class="btn btn-primary" style="margin-right: 10px;">Spil</button>
       <span style="font-size: larger">{{game.name}} - {{game.players}} of 4 players</span>
     </div>
   </div>
