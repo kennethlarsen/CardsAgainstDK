@@ -4,7 +4,6 @@
 
 NodeJS implementation of Cards Against Humanity. Here's a screenshot:
 
-<img src="/nodejs-against-humanity.png" />
 
 ##Run Locally
 
