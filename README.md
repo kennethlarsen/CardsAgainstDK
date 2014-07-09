@@ -1,8 +1,12 @@
+# CardsAgainstDK
+Cards Against online der kører på NodeJS. Den her version har en masse danske kort(med gratis stavefejl) - Før jer frie til at tilføje ændringer mm. 
+
+Kode af @amirrajan på Github. Jeg har bare ændret design og oversat scriptet på dansk. 
+
+
 ##NodeJS Against Humanity
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic License</a>.
-
-NodeJS implementation of Cards Against Humanity. Here's a screenshot:
 
 
 ##Run Locally
@@ -17,13 +21,7 @@ Run the app:
 
 Then navigate to `http://localhost:3000`
 
-If you want tests to execute every time you change a file:
 
-    jasmine-node ./spec/describe_Game_spec.js --autotest --watch ./game.js
-    
-To run the E2E tests you first must install protractor. see: https://github.com/angular/protractor/blob/master/docs/getting-started.md
-
-If you want the server to load up everytime you change the back end:
 
     npm install -g nodemon
 
