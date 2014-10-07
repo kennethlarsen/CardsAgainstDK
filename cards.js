@@ -7,7 +7,7 @@ function black() {
   	"I denne uges Hvad er det værd vil vi lægge ud med at se på __________.",
   	"Vielsesceremonien endte brat, dat __________ pludselig dukkede op.",
   	"Som din advokat vill jeg råde dig til ikke at nævne __________ under afhøringen",
-  	"De danske soldater i afghanistand vandt lokalbefolkningens tillid ved at medbringe __________",
+  	"De danske soldater i afghanistan vandt lokalbefolkningens tillid ved at medbringe __________",
   	"Til salg __________, kun brugt få gange, 350 KR",
   	"Jordmoderen fik sig et chock, da hun under fødslen hev __________ ud af den målløse mor.",
   	"Det eneste, jeg kan huske fra i går er __________",
@@ -362,7 +362,10 @@ function white() {
    "You have very sexy ears!",
    "Klistret bæverjuice",
    "En lille pige fra afrika der lige har fået sin første menstruation",
-   "Man kan vel købe et par sko for de penge"
+   "Man kan vel købe et par sko for de penge",
+   "Min mors menstruationsblod",
+   "En død fugl",
+   "En musikvideo af Walid Knaldperlen der knepper Simon Emil Amitzbøl"
   ];
 }
 
